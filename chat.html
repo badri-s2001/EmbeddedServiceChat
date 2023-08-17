@@ -34,17 +34,6 @@
 		embedded_svc.settings.enabledFeatures = ['LiveAgent'];
 		embedded_svc.settings.entryFeature = 'LiveAgent';
 
-		embedded_svc.settings.extraPrechatInfo = [{
-		    "entityFieldMaps": [{
-			    "doCreate": true,
-			    "doFind": true,
-			    "fieldName": "Description__c",
-			    "isExactMatch": true,
-			    "label": "Description"
-			  }],
-			  "entityName": "LiveChatTranscript"
-		}];
-
 		embedded_svc.init(
 			'https://neuraflash179-dev-ed.develop.my.salesforce.com',
 			'https://neuraflash179-dev-ed.develop.my.salesforce-sites.com/',
