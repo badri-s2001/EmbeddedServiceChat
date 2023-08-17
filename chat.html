@@ -35,13 +35,14 @@
 		embedded_svc.settings.entryFeature = 'LiveAgent';
 
 		embedded_svc.settings.extraPrechatInfo = [{
-		    "doCreate": false,
-		    "doFind": false,
-		    "fieldName": "Description__c",
-		    "isExactMatch": true,
-		    "label": "Description"
-		  }],
-		  "entityName": "LiveChatTranscript"
+		    "entityFieldMaps": [{
+			    "doCreate": true,
+			    "doFind": true,
+			    "fieldName": "Description__c",
+			    "isExactMatch": true,
+			    "label": "Description"
+			  }],
+			  "entityName": "Contact"
 		}];
 
 		embedded_svc.init(
