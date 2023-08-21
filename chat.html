@@ -40,9 +40,9 @@
 		document.addEventListener(
 			"setCustomField",
 			function(event) {
+				console.log('inside event listener');
 				embedded_svc.settings.extraPrechatFormDetails[6].value = event.detail.customField;
 				// Fire startChat callback.
-				console.log('inside event listener');
 				event.detail.callback();
 			},
 			false
